@@ -3,7 +3,6 @@
 [![OpenFlexo](https://img.shields.io/badge/OpenFlexo-2.99-blue.svg)](https://www.openflexo.org)
 [![MCP](https://img.shields.io/badge/MCP-2024--11--05-green.svg)](https://modelcontextprotocol.io)
 [![Java](https://img.shields.io/badge/Java-8+-orange.svg)](https://openjdk.org)
-[![License](https://img.shields.io/badge/License-EUPL%20%2F%20GPL-orange.svg)](LICENSE)
 
 A technology adapter that brings the **Model Context Protocol (MCP)** into the [OpenFlexo](https://www.openflexo.org) model federation framework. It enables FML (Flexo Modeling Language) virtual models to connect to MCP servers, invoke tools, access resources, and orchestrate external AI services — all from within the OpenFlexo platform.
 
