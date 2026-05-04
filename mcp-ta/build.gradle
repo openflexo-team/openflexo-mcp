@@ -1,0 +1,36 @@
+plugins {
+    id 'java-library'
+}
+
+ java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs << '-Xlint:unchecked'
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    api project(':mcp-connector')
+
+    implementation flexoFoundation()
+    implementation flexoOntology()
+
+    testImplementation testUtils()
+    testImplementation flexoFoundationTest()
+
+
+     implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'org.slf4j:slf4j-api:2.0.9'
+
+     testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.slf4j:slf4j-simple:2.0.9'
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.openflexo.org/artifactory/openflexo-deps/' }
+}
+

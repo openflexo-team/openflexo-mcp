@@ -1,0 +1,17 @@
+dependencies {
+    implementation project(':mcp-ta')
+     implementation 'com.google.code.gson:gson:2.10.1'
+    implementation("org.openflexo:flexo-foundation:2.0.0-SNAPSHOT")
+
+    implementation flexoFoundation()
+
+    implementation testUtils()
+    implementation flexoFoundationTest()
+
+     testImplementation flexoFoundation()
+    testImplementation flexoFoundationTest()
+    testImplementation fmlCli()
+    testImplementation fmlCliTest()
+
+     testRuntimeOnly project(':mcp-ta-test-rc')
+}

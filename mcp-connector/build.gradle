@@ -1,0 +1,24 @@
+
+dependencies {
+     implementation 'com.google.code.gson:gson:2.10.1'
+
+     implementation 'org.apache.httpcomponents.client5:httpclient5:5.2.1'
+
+     implementation 'org.slf4j:slf4j-api:2.0.9'
+
+     implementation 'io.reactivex.rxjava3:rxjava:3.1.8'
+
+     testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-core:5.7.0'
+    testImplementation 'org.slf4j:slf4j-simple:2.0.9'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+ tasks.withType(JavaCompile) {
+    options.compilerArgs << '-Xlint:unchecked'
+    options.encoding = 'UTF-8'
+}

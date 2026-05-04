@@ -1,0 +1,96 @@
+# Build and compilation
+**/target
+**/build
+**/bin
+**/.gradle/
+*.class
+*.war
+*.ear
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE specific files
+*.ipr
+*.idea
+*.iws
+*.iml
+.idea/
+.vscode/
+.classpath
+.project
+.settings/
+.metadata
+
+# OS specific
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# Editor temporary files
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# Build output
+**/out/
+build/
+.gradle/
+
+# LaTeX build artifacts
+*.fls
+*.fdb_latexmk
+*.aux
+*.log
+
+# Java version files
+.java-version
+
+# Environment and configuration
+.env
+.env.*
+!.env.example
+
+# Test output and logs
+test_output.txt
+test_output2.txt
+*.log
+jreadline.log
+
+# Node.js specific (for mcp-test-environment)
+mcp-test-environment/node_modules/
+mcp-test-environment/package-lock.json
+mcp-test-environment/.env.local
+
+# JVM profiling and crash dumps
+*.hprof
+*.jfr
+hs_err_pid*.log
+
+# Heap dumps
+*.dump
+*.heapdump
+
+# IntelliJ runtime files
+**/*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/shelf
+.idea/vcs.xml
+.idea/runConfigurations.xml
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Gradle specific
+.gradle/
+gradle.properties
+
+# Temporary files from development
+*.swp
+.DS_Store
+Thumbs.db

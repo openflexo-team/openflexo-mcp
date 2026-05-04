@@ -1,0 +1,8 @@
+rootProject.name = 'openflexo-mcp'
+
+include 'mcp-connector'
+include 'mcp-ta'
+include 'mcp-ta-ui'
+include 'mcp-ta-test'
+include 'mcp-ta-test-rc'
+
